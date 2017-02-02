@@ -36,7 +36,7 @@
 
 
 /* CSS Reset
-================================================== 
+================================================== */
 
 html,body,div,span,h1,h6,p,a,ul,li,audio {
 border:0;
@@ -52,7 +52,7 @@ ul { list-style:none; }
 
 
 /* Basic Styles
-==================================================
+================================================== */
 
 html,body {
 -webkit-font-smoothing:antialiased;
@@ -71,7 +71,7 @@ padding:5px 0;
 
 
 /* Typography
-================================================== 
+================================================== */
 
 h1,h6,p { color:#808080; font-weight:200; }
 h1 { font-size:42px; line-height:44px; margin:20px 0 0; }
@@ -82,9 +82,9 @@ p { font-size:18px; line-height:20px; margin:0 0 2px; }
 /* Links
 ================================================== */
 
-.container a, .container a:visited { color:#ddd; outline:0; text-decoration:underline; }
-.container a:hover,a:focus { color:#bbb; }
-.container p a, .container p a:visited { line-height:inherit; }
+a,a:visited { color:#ddd; outline:0; text-decoration:underline; }
+a:hover,a:focus { color:#bbb; }
+p a,p a:visited { line-height:inherit; }
 
 
 /* Misc.
