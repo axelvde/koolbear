@@ -22,52 +22,52 @@ jQuery(function ($) {
             tracks = [{
                 "track": 1,
                 "name": "Koolbear - Katalunia",
-                "length": "02:46",
+                "length": "03:45",
                 "file": "01_Katalunia.mp3"
             }, {
                 "track": 2,
                 "name": "Koolbear - Laks",
-                "length": "08:31",
+                "length": "03:07",
                 "file": "02_Laks.mp3"
             }, {
                 "track": 3,
                 "name": "Koolbear - Generator",
-                "length": "05:02",
+                "length": "03:06",
                 "file": "03_Generator.mp3"
             }, {
                 "track": 4,
                 "name": "Koolbear - Mambo",
-                "length": "08:32",
+                "length": "02:53",
                 "file": "04_Mambo.mp3"
             }, {
                 "track": 5,
                 "name": "Koolbear - Paris",
-                "length": "05:05",
+                "length": "03:22",
                 "file": "05_Paris.mp3"
             }, {
                 "track": 6,
                 "name": "Koolbear - Chai latte",
-                "length": "02:49",
+                "length": "02:00",
                 "file": "06_Chai_latte.mp3"
             }, {
                 "track": 7,
                 "name": "Koolbear - Habitat",
-                "length": "05:45",
+                "length": "03:48",
                 "file": "07_Habitat.mp3"
             }, {
                 "track": 8,
                 "name": "Koolbear - Haw far",
-                "length": "05:27",
+                "length": "03:10",
                 "file": "08_Haw_far.mp3"
             }, {
                 "track": 9,
                 "name": "Koolbear - Rubial",
-                "length": "05:46",
+                "length": "02:42",
                 "file": "09_Rubial.mp3"
             }, {
                 "track": 10,
                 "name": "Koolbear - You you you",
-                "length": "05:25",
+                "length": "04:23",
                 "file": "10_You_you_you.mp3"
             }],
             trackCount = tracks.length,
@@ -128,7 +128,7 @@ jQuery(function ($) {
                 $('#plList li:eq(' + id + ')').addClass('plSel');
                 npTitle.text(tracks[id].name);
                 index = id;
-                audio.src = mediaPath + tracks[id].file + extension;
+                audio.src = mediaPath + tracks[id].file; //+ extension;
             },
             playTrack = function (id) {
                 loadTrack(id);
